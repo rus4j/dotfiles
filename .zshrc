@@ -9,6 +9,10 @@ fi
 export ZSH="$HOME/.oh-my-zsh"
 export PATH=/opt/homebrew/bin:$PATH
 
+# Used by GnuPG to specify a terminal the current session is linked with.
+# Need to sign commits by gpg for GitHub verifed commits.
+export GPG_TTY=$(tty)
+
 # ZSH_THEME="robbyrussell"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
